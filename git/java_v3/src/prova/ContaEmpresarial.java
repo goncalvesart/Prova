@@ -15,11 +15,19 @@ public class ContaEmpresarial extends Conta {
     }
 
    
-    public double getLimiteSaque() { return limiteSaque; }
-    public void setLimiteSaque(double limiteSaque) { this.limiteSaque = limiteSaque; }
+    public double getLimiteSaque() { 
+        return limiteSaque; 
+    }
+    public void setLimiteSaque(double limiteSaque) { 
+        this.limiteSaque = limiteSaque; 
+    }
 
-    public double getLimiteEmprestimo() { return limiteEmprestimo; }
-    public void setLimiteEmprestimo(double limiteEmprestimo) { this.limiteEmprestimo = limiteEmprestimo; }
+    public double getLimiteEmprestimo() { 
+        return limiteEmprestimo; 
+    }
+    public void setLimiteEmprestimo(double limiteEmprestimo) { 
+        this.limiteEmprestimo = limiteEmprestimo; 
+    }
 
     
     @Override
