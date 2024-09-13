@@ -6,14 +6,14 @@ public class Aplicacao {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Criar duas contas empresariais
+      
         System.out.println("Cadastro da Conta Empresarial 1");
         ContaEmpresarial contaEmpresarial1 = cadastrarContaEmpresarial(input);
         
         System.out.println("Cadastro da Conta Empresarial 2");
         ContaEmpresarial contaEmpresarial2 = cadastrarContaEmpresarial(input);
 
-        // Criar três contas Pessoa Física
+       
         System.out.println("Cadastro da Conta Pessoa Física 1");
         ContaPessoaFisica contaPessoaFisica1 = cadastrarContaPessoaFisica(input);
         
@@ -23,14 +23,14 @@ public class Aplicacao {
         System.out.println("Cadastro da Conta Pessoa Física 3");
         ContaPessoaFisica contaPessoaFisica3 = cadastrarContaPessoaFisica(input);
 
-        // Criar duas contas Poupança
+    
         System.out.println("Cadastro da Conta Poupança 1");
         ContaPoupanca contaPoupanca1 = cadastrarContaPoupanca(input);
         
         System.out.println("Cadastro da Conta Poupança 2");
         ContaPoupanca contaPoupanca2 = cadastrarContaPoupanca(input);
 
-        // Emitir extrato de todas as contas cadastradas
+      
         emitirExtratoConta(contaEmpresarial1);
         emitirExtratoConta(contaEmpresarial2);
         emitirExtratoConta(contaPessoaFisica1);
@@ -40,7 +40,7 @@ public class Aplicacao {
         emitirExtratoConta(contaPoupanca2);
     }
 
-    // Métodos auxiliares para cadastro
+    
     public static ContaEmpresarial cadastrarContaEmpresarial(Scanner input) {
         System.out.print("Número da conta: ");
         int numeroConta = input.nextInt();
@@ -88,7 +88,7 @@ public class Aplicacao {
         return new ContaPoupanca(numeroConta, nomeTitular, idade, saldo);
     }
 
-    // Método para emitir extrato de cada conta
+ 
     public static void emitirExtratoConta(Conta conta) {
         System.out.println("Conta: " + conta.getNumeroConta() + ", Titular: " + conta.getNomeTitular() + ", Saldo: R$ " + conta.getSaldo());
     }
