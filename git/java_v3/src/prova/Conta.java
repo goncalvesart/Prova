@@ -6,10 +6,10 @@ public class Conta {
     private int idade;
     protected double saldo;
 
-    // Construtor padrão
+   
     public Conta() {}
 
-    // Construtor personalizado
+   
     public Conta(int numeroConta, String nomeTitular, int idade, double saldo) {
         this.numeroConta = numeroConta;
         this.nomeTitular = nomeTitular;
@@ -17,7 +17,7 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    // Métodos Getters e Setters (exceto para saldo)
+   
     public int getNumeroConta() { return numeroConta; }
     public void setNumeroConta(int numeroConta) { this.numeroConta = numeroConta; }
 
@@ -29,7 +29,7 @@ public class Conta {
 
     public double getSaldo() { return saldo; }
 
-    // Métodos de operação
+    
     public void depositar(double valor) {
         saldo += valor;
     }
@@ -39,7 +39,7 @@ public class Conta {
             saldo -= valor;
             return true;
         }
-        return false;  // Não permite saque sem saldo
+        return false;  
     }
 
     public boolean emprestar(double valor) {
