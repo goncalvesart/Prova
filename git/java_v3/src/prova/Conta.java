@@ -18,16 +18,30 @@ public class Conta {
     }
 
    
-    public int getNumeroConta() { return numeroConta; }
-    public void setNumeroConta(int numeroConta) { this.numeroConta = numeroConta; }
+    public int getNumeroConta() { 
+        return numeroConta; 
+    }
+    public void setNumeroConta(int numeroConta) { 
+        this.numeroConta = numeroConta; 
+    }
 
-    public String getNomeTitular() { return nomeTitular; }
-    public void setNomeTitular(String nomeTitular) { this.nomeTitular = nomeTitular; }
+    public String getNomeTitular() { 
+        return nomeTitular; 
+    }
+    public void setNomeTitular(String nomeTitular) { 
+        this.nomeTitular = nomeTitular; 
+    }
 
-    public int getIdade() { return idade; }
-    public void setIdade(int idade) { this.idade = idade; }
+    public int getIdade() { 
+        return idade; 
+    }
+    public void setIdade(int idade) { 
+        this.idade = idade;
+    }
 
-    public double getSaldo() { return saldo; }
+    public double getSaldo() { 
+        return saldo; 
+    }
 
     
     public void depositar(double valor) {
